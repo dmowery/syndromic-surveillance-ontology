@@ -1,0 +1,6 @@
+ASSUMPTIONS:
+
+- Keyword list is separated by :::
+- Each keyword represents a triple of the form 'keyword [regex] [UMLS CUI]'
+- Sub-concept Names on ClinicalConcepts sheet are unique
+- Single Clinical Condition/Concept be part of more than one Syndrome Definition?
