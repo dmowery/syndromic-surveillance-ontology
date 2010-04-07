@@ -1,8 +1,7 @@
-NOTE to Anya: Need to create a proper readme!
+07 Apr, 2010
 
-*** These are temporary lame instructions ***
-(copied from my email to Mike dated October 2009)
-
+Copied from Anya's email to Mike dated October 2009. May need to update!
+-----------------------------------------------------------------------------------
 
 To make it work you'll need to follow several steps:
 
