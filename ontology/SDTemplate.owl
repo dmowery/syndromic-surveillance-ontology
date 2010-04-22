@@ -15,6 +15,15 @@
   <owl:Class rdf:ID="ClinicalConcept"/>
   <owl:Class rdf:ID="MeSH">
     <rdfs:subClassOf rdf:resource="#Coding"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="codingSystemName"/>
+        </owl:onProperty>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >MeSH</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="Syndrome"/>
   <owl:Class rdf:ID="ConceptMetaClass">
@@ -24,30 +33,73 @@
   <owl:Class rdf:ID="Keyword"/>
   <owl:Class rdf:ID="SNOMED">
     <rdfs:subClassOf rdf:resource="#Coding"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="#codingSystemName"/>
+        </owl:onProperty>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >SNOMED</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ICD_10">
+    <rdfs:subClassOf rdf:resource="#Coding"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="#codingSystemName"/>
+        </owl:onProperty>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >ICD10</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="ConditionMetaClass">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </owl:Class>
   <owl:Class rdf:ID="CCC">
     <rdfs:subClassOf rdf:resource="#Coding"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="#codingSystemName"/>
+        </owl:onProperty>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CCC</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="UMLS">
     <rdfs:subClassOf rdf:resource="#Coding"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="#codingSystemName"/>
+        </owl:onProperty>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >UMLS</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="RegularExpression"/>
   <owl:Class rdf:ID="ICD_9">
     <rdfs:subClassOf rdf:resource="#Coding"/>
-  </owl:Class>
-  <owl:Class rdf:ID="CodingMetaClass">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >ICD9</owl:hasValue>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="#codingSystemName"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="SyndromeMetaClass">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </owl:Class>
   <owl:ObjectProperty rdf:ID="mapsToCode">
-    <rdfs:range rdf:resource="#CodingMetaClass"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="#RegularExpression"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasSensitiveDefinition">
     <owl:inverseOf>
@@ -62,15 +114,6 @@
       <owl:ObjectProperty rdf:ID="matchesConcept"/>
     </owl:inverseOf>
     <rdfs:domain rdf:resource="#ConceptMetaClass"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasExactConcept">
-    <rdfs:range rdf:resource="#ConceptMetaClass"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="#ConditionMetaClass"/>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:ID="isExactConceptFor"/>
-    </owl:inverseOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="isSynonymousTo">
     <rdfs:range rdf:resource="#ConditionMetaClass"/>
@@ -102,36 +145,22 @@
     </owl:inverseOf>
     <rdfs:range rdf:resource="#ConditionMetaClass"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="matchesKeywords">
+  <owl:ObjectProperty rdf:ID="linksToConcept">
+    <rdfs:domain rdf:resource="#Coding"/>
+    <rdfs:range rdf:resource="#ClinicalConcept"/>
     <owl:inverseOf>
-      <owl:ObjectProperty rdf:ID="isMatchedByRegEx"/>
+      <owl:ObjectProperty rdf:ID="hasExternalCodings"/>
     </owl:inverseOf>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdfs:range rdf:resource="#Keyword"/>
-    <rdfs:domain rdf:resource="#RegularExpression"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#isInSpecificDefinitionOf">
-    <rdfs:domain rdf:resource="#ConditionMetaClass"/>
-    <owl:inverseOf rdf:resource="#hasSpecificDefinition"/>
-    <rdfs:range rdf:resource="#SyndromeMetaClass"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#matchesConcept">
     <owl:inverseOf rdf:resource="#hasInclusionKeywords"/>
     <rdfs:range rdf:resource="#ConceptMetaClass"/>
     <rdfs:domain rdf:resource="#Keyword"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#isMatchedByRegEx">
-    <rdfs:range rdf:resource="#RegularExpression"/>
-    <rdfs:domain rdf:resource="#Keyword"/>
-    <owl:inverseOf rdf:resource="#matchesKeywords"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#isExactConceptFor">
-    <rdfs:domain rdf:resource="#ConceptMetaClass"/>
-    <rdfs:range rdf:resource="#ConditionMetaClass"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <owl:inverseOf rdf:resource="#hasExactConcept"/>
+  <owl:ObjectProperty rdf:about="#isInSpecificDefinitionOf">
+    <rdfs:domain rdf:resource="#ConditionMetaClass"/>
+    <owl:inverseOf rdf:resource="#hasSpecificDefinition"/>
+    <rdfs:range rdf:resource="#SyndromeMetaClass"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#hasSynonymousConcepts">
     <rdfs:range rdf:resource="#ConceptMetaClass"/>
@@ -143,37 +172,13 @@
     <owl:inverseOf rdf:resource="#hasRelatedConcepts"/>
     <rdfs:range rdf:resource="#ConditionMetaClass"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hasExternalCodings">
+  <owl:ObjectProperty rdf:about="#hasExternalCodings">
+    <owl:inverseOf rdf:resource="#linksToConcept"/>
     <rdfs:range rdf:resource="#Coding"/>
-    <rdfs:domain rdf:resource="#ConditionMetaClass"/>
+    <rdfs:domain rdf:resource="#ConceptMetaClass"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:ID="codeID">
-    <rdfs:domain rdf:resource="#CodingMetaClass"/>
+  <owl:DatatypeProperty rdf:ID="hasName">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="codeTitle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="#CodingMetaClass"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="hasRegExString">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RegularExpression"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="hasString">
-    <rdfs:domain rdf:resource="#Keyword"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="codingSystemName">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#CodingMetaClass"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </owl:DatatypeProperty>
-  <owl:FunctionalProperty rdf:ID="hasName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain>
       <owl:Class>
@@ -184,7 +189,62 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:ID="codeID">
+    <rdfs:domain rdf:resource="#Coding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="codeTitle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#Coding"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasExactConcept">
+    <rdfs:range rdf:resource="#ConceptMetaClass"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#ConditionMetaClass"/>
+    <owl:inverseOf>
+      <owl:FunctionalProperty rdf:ID="isExactConceptFor"/>
+    </owl:inverseOf>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasRegExString">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#RegularExpression"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasString">
+    <rdfs:domain rdf:resource="#Keyword"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#isExactConceptFor">
+    <rdfs:domain rdf:resource="#ConceptMetaClass"/>
+    <rdfs:range rdf:resource="#ConditionMetaClass"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="#hasExactConcept"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="isMatchedByRegEx">
+    <rdfs:range rdf:resource="#RegularExpression"/>
+    <rdfs:domain rdf:resource="#Keyword"/>
+    <owl:inverseOf>
+      <owl:InverseFunctionalProperty rdf:ID="matchesKeywords"/>
+    </owl:inverseOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#codingSystemName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Coding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:about="#matchesKeywords">
+    <owl:inverseOf rdf:resource="#isMatchedByRegEx"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Keyword"/>
+    <rdfs:domain rdf:resource="#RegularExpression"/>
+  </owl:InverseFunctionalProperty>
   <SyndromeMetaClass rdf:ID="ConstitutionalSyndrome">
     <rdfs:subClassOf rdf:resource="#Syndrome"/>
     <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"

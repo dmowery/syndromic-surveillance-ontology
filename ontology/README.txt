@@ -10,7 +10,7 @@ SDTemplate
   but not specific conditions, concepts or keywords
 - used by ontobuilder as template
 - .owl + .pprj 
-  .pprj file can be used to edit the template in Protege (3.3.1)
+  .pprj file can be used to edit the template in Protege (3.4.1)
 
 SyndromeDefinitions
 

@@ -1,4 +1,4 @@
-; Wed Dec 02 10:03:58 EST 2009
+; Thu Apr 22 15:56:37 EDT 2010
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -6,11 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[SDTemplate_ProjectKB_Class53]
-		[SDTemplate_ProjectKB_Class10054]
-		[SDTemplate_ProjectKB_Class10055]
-		[SDTemplate_ProjectKB_Class10056]
-		[SDTemplate_ProjectKB_Class10057]))
+		[SDTemplate_ProjectKB_Class10277]
+		[SDTemplate_ProjectKB_Class10278]
+		[SDTemplate_ProjectKB_Class10279]
+		[SDTemplate_ProjectKB_Class10280]
+		[SDTemplate_ProjectKB_Class10281]))
 
 ([CLSES_TAB] of  Widget
 
@@ -3081,7 +3081,7 @@
 	(property_list [XY_Instance_195])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
-([KB_816985_Class0] of  Map
+([KB_849851_Class0] of  Map
 )
 
 ([KB_865583_Instance_10] of  Widget
@@ -6936,14 +6936,17 @@
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
 		[KB_713803_Instance_477]
+		[KB_313796_Instance_852]
 		[KB_691299_Instance_398]
 		[PAL_FORM_WIDGET]
-		[KB_313796_Instance_852]
 		[Instance_581]
 		[KB_938545_Instance_578]
 		[KB_713803_Instance_693]
+		[SDTemplate_ProjectKB_Class10084]
+		[SDTemplate_ProjectKB_Class10150]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_938545_Instance_495]
+		[SDTemplate_ProjectKB_Class10214]
 		[KB_938545_Instance_166]
 		[STANDARD_SLOT_FORM_WIDGET]
 		[KB_313796_Instance_943]
@@ -6977,16 +6980,16 @@
 		":PAL-NAME"
 		"http://www.w3.org/2003/11/swrl#Imp"
 		"http://protege.stanford.edu/plugins/owl/protege#PAL-RANGE"
-		"http://www.w3.org/2001/XMLSchema#anySimpleType"
 		"http://www.w3.org/2001/XMLSchema#NOTATION"
+		"http://www.w3.org/2001/XMLSchema#anySimpleType"
 		":MODIFIER"
-		"http://www.w3.org/2003/11/swrlb#addYearMonthDurationToDatetime"
 		"http://www.w3.org/2003/11/swrlb#subtractDayTimeDurations"
-		"http://www.w3.org/2000/01/rdf-schema#Container"
 		"http://protege.stanford.edu/plugins/owl/protege#SLOT-CONSTRAINTS"
+		"http://www.w3.org/2000/01/rdf-schema#Container"
+		"http://www.w3.org/2003/11/swrlb#addYearMonthDurationToDatetime"
 		"http://www.w3.org/2003/11/swrlb#subtractDates"
-		":SLOT-NUMERIC-MINIMUM"
 		"http://www.w3.org/2001/XMLSchema#integer"
+		":SLOT-NUMERIC-MINIMUM"
 		"http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
 		":DIRECTED-BINARY-RELATION"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
@@ -6997,37 +7000,37 @@
 		"http://www.w3.org/2003/11/swrlb#stringConcat"
 		":ANNOTATION-TEXT"
 		"http://www.w3.org/2003/11/swrl#arguments"
-		"http://www.w3.org/2003/11/swrlb#greaterThan"
 		"http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
+		"http://www.w3.org/2003/11/swrlb#greaterThan"
 		":ANNOTATED-INSTANCE"
 		":SLOT-CONSTRAINTS"
 		"http://www.w3.org/2001/XMLSchema#string"
 		"http://www.w3.org/2003/11/swrl#BuiltinAtom"
 		"http://www.w3.org/2003/11/swrlb#unaryMinus"
-		"http://www.w3.org/2002/07/owl#Ontology"
 		":PAL-RANGE"
 		":OWL-ONTOLOGY-POINTER-CLASS"
-		"http://www.w3.org/2003/11/swrlb#stringEqualIgnoreCase"
-		"http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+		"http://www.w3.org/2002/07/owl#Ontology"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
 		"http://www.w3.org/2001/XMLSchema#dateTime"
+		"http://www.w3.org/2003/11/swrlb#stringEqualIgnoreCase"
 		"http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
 		":VALUE-TYPE"
 		"http://www.w3.org/2002/07/owl#incompatibleWith"
 		"http://www.w3.org/2002/07/owl#CardinalityRestriction"
 		"http://www.w3.org/2001/XMLSchema#boolean"
 		"http://www.w3.org/2002/07/owl#inverseOf"
-		"http://www.w3.org/2003/11/swrlb#round"
 		"http://protege.stanford.edu/plugins/owl/protege#inferredType"
+		"http://www.w3.org/2003/11/swrlb#round"
 		"http://www.w3.org/2002/07/owl#cardinality"
 		"http://www.w3.org/2001/XMLSchema#Name"
 		":ANNOTATION"
 		"http://www.w3.org/2002/07/owl#valuesFrom"
 		"http://www.w3.org/2003/11/swrl#body"
-		"http://www.w3.org/2003/11/swrlb#subtractYearMonthDurationFromDate"
 		":STANDARD-SLOT"
-		":OWL-ANONYMOUS-ROOT"
+		"http://www.w3.org/2003/11/swrlb#subtractYearMonthDurationFromDate"
 		"http://www.w3.org/2001/XMLSchema#int"
+		":OWL-ANONYMOUS-ROOT"
 		"http://www.w3.org/2003/11/swrlb#subtractYearMonthDurations"
 		"http://www.w3.org/2003/11/swrlb#yearMonthDuration"
 		"http://www.w3.org/2003/11/swrlb#substringBefore"
@@ -7042,10 +7045,10 @@
 		"http://www.w3.org/2002/07/owl#sameAs"
 		":DIRECT-TYPE"
 		"http://www.w3.org/2001/XMLSchema#time"
-		"http://www.w3.org/2003/11/swrlb#subtractDatetimesYieldingYearMonthDuration"
-		"http://www.w3.org/2003/11/swrlb#subtract"
 		":NAME"
 		"http://www.w3.org/2002/07/owl#equivalentClass"
+		"http://www.w3.org/2003/11/swrlb#subtractDatetimesYieldingYearMonthDuration"
+		"http://www.w3.org/2003/11/swrlb#subtract"
 		"http://www.w3.org/2003/11/swrlb#multiplyDayTimeDurations"
 		"http://www.w3.org/2003/11/swrlb#divideDayTimeDuration"
 		"http://www.w3.org/2003/11/swrlb#subtractYearMonthDurationFromDatetime"
@@ -7054,23 +7057,23 @@
 		"http://protege.stanford.edu/plugins/owl/protege#OWL-ONTOLOGY-PREFIXES"
 		"http://protege.stanford.edu/plugins/owl/protege#inferredSubclassOf"
 		"http://www.w3.org/2003/11/swrlb#equal"
-		"http://www.w3.org/2003/11/swrl#SameIndividualAtom"
 		":PAL-DESCRIPTION"
-		"http://www.w3.org/2002/07/owl#AnonymousClass"
+		"http://www.w3.org/2003/11/swrl#SameIndividualAtom"
 		"http://www.w3.org/2002/07/owl#MinCardinalityRestriction"
+		"http://www.w3.org/2002/07/owl#AnonymousClass"
 		"http://www.w3.org/2001/XMLSchema#anyURI"
 		"http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
 		"http://www.w3.org/2003/11/swrlb#subtractDayTimeDurationFromDate"
-		"http://www.w3.org/2003/11/swrlb#contains"
 		":CLASS"
+		"http://www.w3.org/2003/11/swrlb#contains"
 		"http://www.w3.org/2002/07/owl#complementOf"
 		":ROLE"
 		"http://www.w3.org/2003/11/swrlb#addDayTimeDurationToTime"
 		"http://www.w3.org/2003/11/swrlb#translate"
-		"http://www.w3.org/2003/11/swrlb#dayTimeDuration"
-		":DOCUMENTATION-IN-FRAME"
 		"http://www.w3.org/2002/07/owl#TransitiveProperty"
 		"http://www.w3.org/2002/07/owl#IntersectionClass"
+		"http://www.w3.org/2003/11/swrlb#dayTimeDuration"
+		":DOCUMENTATION-IN-FRAME"
 		"http://www.w3.org/2000/01/rdf-schema#range"
 		"http://www.w3.org/2003/11/swrlb#pow"
 		"http://www.w3.org/2001/XMLSchema#gYearMonth"
@@ -7089,17 +7092,17 @@
 		"http://www.w3.org/2000/01/rdf-schema#subClassOf"
 		"http://www.w3.org/2001/XMLSchema#gYear"
 		"http://www.w3.org/2001/XMLSchema#gMonthDay"
-		"http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
 		"http://www.w3.org/2001/XMLSchema#normalizedString"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
 		"http://protege.stanford.edu/plugins/owl/protege#FROM"
 		"http://www.w3.org/2001/XMLSchema#nonPositiveInteger"
 		"http://www.w3.org/2003/11/swrlb#time"
-		"http://protege.stanford.edu/plugins/owl/protege#classificationStatus"
 		"http://www.w3.org/2002/07/owl#someValuesFrom"
+		"http://protege.stanford.edu/plugins/owl/protege#classificationStatus"
 		"http://protege.stanford.edu/plugins/owl/protege#inferredSuperclassOf"
 		"http://www.w3.org/2003/11/swrlb#notEqual"
-		"http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
 		"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
 		"http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"
 		"http://www.w3.org/2003/11/swrlb#multiply"
 		"http://www.w3.org/2003/11/swrl#dataRange"
@@ -7121,8 +7124,8 @@
 		"http://www.w3.org/2003/11/swrl#DataRangeAtom"
 		"http://www.w3.org/2002/07/owl#priorVersion"
 		"http://www.w3.org/2001/XMLSchema#token"
-		"http://www.w3.org/2003/11/swrlb#tan"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+		"http://www.w3.org/2003/11/swrlb#tan"
 		":DIRECT-TEMPLATE-SLOTS"
 		"http://www.w3.org/2002/07/owl#DataRange"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
@@ -7133,19 +7136,19 @@
 		"http://protege.stanford.edu/plugins/owl/protege#PAL-STATEMENT"
 		"http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT"
 		"http://www.w3.org/2003/11/swrl#ClassAtom"
-		"http://www.w3.org/2001/XMLSchema#IDREF"
 		"http://www.w3.org/2002/07/owl#SymmetricProperty"
-		"http://www.w3.org/2002/07/owl#differentFrom"
+		"http://www.w3.org/2001/XMLSchema#IDREF"
 		"http://protege.stanford.edu/plugins/owl/protege#PAL-NAME"
+		"http://www.w3.org/2002/07/owl#differentFrom"
 		"http://www.w3.org/2001/XMLSchema#gMonth"
 		"http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
-		":OWL-CLASS"
 		"http://www.w3.org/2001/XMLSchema#unsignedShort"
+		":OWL-CLASS"
 		"http://www.w3.org/2003/11/swrlb#subtractDayTimeDurationFromDatetime"
 		"http://www.w3.org/2001/XMLSchema#unsignedInt"
 		":STANDARD-FACET"
-		":STANDARD-CLASS"
 		"http://www.w3.org/2002/07/owl#Restriction"
+		":STANDARD-CLASS"
 		"http://www.w3.org/2002/07/owl#MaxCardinalityRestriction"
 		"http://www.w3.org/2001/XMLSchema#NCName"
 		"http://www.w3.org/2001/XMLSchema#ID"
@@ -7154,36 +7157,36 @@
 		"http://www.w3.org/2003/11/swrlb#roundHalfToEven"
 		"http://www.w3.org/2000/01/rdf-schema#member"
 		"http://www.w3.org/2002/07/owl#LogicalClass"
-		"http://www.w3.org/2003/11/swrlb#addDayTimeDurationToDate"
 		"http://www.w3.org/2003/11/swrlb#subtractTimes"
+		"http://www.w3.org/2003/11/swrlb#addDayTimeDurationToDate"
 		"http://www.w3.org/2003/11/swrl#Builtin"
 		"http://www.w3.org/2003/11/swrl#head"
-		"http://protege.stanford.edu/plugins/owl/protege#OWL-RESOURCE-URI"
 		"http://www.w3.org/2001/XMLSchema#negativeInteger"
+		"http://protege.stanford.edu/plugins/owl/protege#OWL-RESOURCE-URI"
 		"http://www.w3.org/2003/11/swrl#builtin"
 		"http://www.w3.org/2001/XMLSchema#decimal"
 		"http://www.w3.org/2003/11/swrl#AtomList"
 		"http://www.w3.org/2003/11/swrl#classPredicate"
 		"http://www.w3.org/2000/01/rdf-schema#Literal"
-		"http://www.w3.org/2002/07/owl#equivalentProperty"
 		"http://www.w3.org/2000/01/rdf-schema#seeAlso"
+		"http://www.w3.org/2002/07/owl#equivalentProperty"
 		"http://www.w3.org/2000/01/rdf-schema#label"
-		"http://www.w3.org/2001/XMLSchema#long"
 		"http://www.w3.org/2002/07/owl#SomeValuesFromRestriction"
+		"http://www.w3.org/2001/XMLSchema#long"
 		":SLOT-VALUE-TYPE"
 		"http://www.w3.org/2002/07/owl#HasValueRestriction"
+		"http://www.w3.org/2001/XMLSchema#duration"
 		"http://www.w3.org/2003/11/swrlb#minArgs"
 		"http://www.w3.org/2001/XMLSchema#positiveInteger"
-		"http://www.w3.org/2001/XMLSchema#duration"
 		"http://www.w3.org/2002/07/owl#oneOf"
 		":VALUES"
 		":ASSOCIATED-SLOT"
 		"http://www.w3.org/2003/11/swrlb#lowerCase"
 		"http://www.w3.org/2001/XMLSchema#language"
 		"http://www.w3.org/2003/11/swrlb#stringLength"
+		"http://www.w3.org/2002/07/owl#versionInfo"
 		":CONSTRAINTS"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
-		"http://www.w3.org/2002/07/owl#versionInfo"
 		"http://www.w3.org/2001/XMLSchema#base64Binary"
 		"http://www.w3.org/2001/XMLSchema#short"
 		"http://www.w3.org/2003/11/swrlb#lessThan"
@@ -7200,18 +7203,18 @@
 		"http://www.w3.org/2002/07/owl#DeprecatedClass"
 		"http://www.w3.org/2001/XMLSchema#hexBinary"
 		"http://www.w3.org/2002/07/owl#DatatypeProperty"
-		"http://www.w3.org/2001/XMLSchema#double"
 		"http://www.w3.org/2001/XMLSchema#unsignedByte"
+		"http://www.w3.org/2001/XMLSchema#double"
 		"http://www.w3.org/2002/07/owl#distinctMembers"
 		":SLOT-NUMERIC-MAXIMUM"
 		"http://www.w3.org/2003/11/swrlb#containsIgnoreCase"
 		":INSTANCE-ANNOTATION"
-		"http://www.w3.org/2003/11/swrlb#divide"
 		":SLOT-MINIMUM-CARDINALITY"
+		"http://www.w3.org/2003/11/swrlb#divide"
 		"http://www.w3.org/2002/07/owl#AnnotationProperty"
 		":DIRECT-SUBCLASSES"
-		"http://www.w3.org/2003/11/swrlb#replace"
 		"http://www.w3.org/2002/07/owl#DeprecatedProperty"
+		"http://www.w3.org/2003/11/swrlb#replace"
 		"http://www.w3.org/2003/11/swrlb#date"
 		"http://www.w3.org/2002/07/owl#ObjectProperty"
 		"http://www.w3.org/2003/11/swrlb#ceiling"
@@ -7290,22 +7293,1278 @@
 ([SDTemplate_ProjectKB_Class10] of  Property_List
 )
 
-([SDTemplate_ProjectKB_Class10054] of  String
+([SDTemplate_ProjectKB_Class10084] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#ConceptMetaClass")
+	(property_list [SDTemplate_ProjectKB_Class10087])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([SDTemplate_ProjectKB_Class10087] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[SDTemplate_ProjectKB_Class10088]
+		[SDTemplate_ProjectKB_Class10090]
+		[SDTemplate_ProjectKB_Class10091]
+		[SDTemplate_ProjectKB_Class10092]
+		[SDTemplate_ProjectKB_Class10107]
+		[SDTemplate_ProjectKB_Class10110]
+		[SDTemplate_ProjectKB_Class10112]
+		[SDTemplate_ProjectKB_Class10113]
+		[SDTemplate_ProjectKB_Class10115]
+		[SDTemplate_ProjectKB_Class10118]
+		[SDTemplate_ProjectKB_Class10120]
+		[SDTemplate_ProjectKB_Class10122]
+		[SDTemplate_ProjectKB_Class10124]
+		[SDTemplate_ProjectKB_Class10126]
+		[SDTemplate_ProjectKB_Class10128]
+		[SDTemplate_ProjectKB_Class10130]
+		[SDTemplate_ProjectKB_Class10132]
+		[SDTemplate_ProjectKB_Class10134]
+		[SDTemplate_ProjectKB_Class10136]
+		[SDTemplate_ProjectKB_Class10138]
+		[SDTemplate_ProjectKB_Class10140]
+		[SDTemplate_ProjectKB_Class10142]
+		[SDTemplate_ProjectKB_Class10144]
+		[SDTemplate_ProjectKB_Class10146]
+		[SDTemplate_ProjectKB_Class10148]))
+
+([SDTemplate_ProjectKB_Class10088] of  Widget
+
+	(height 0)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [SDTemplate_ProjectKB_Class10089])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10089] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10090] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([SDTemplate_ProjectKB_Class10091] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([SDTemplate_ProjectKB_Class10092] of  Widget
+
+	(height 330)
+	(label "Definition")
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [SDTemplate_ProjectKB_Class10093])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.ClassAnnotationsAndDescriptionWidget")
+	(width 660)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10093] of  Property_List
+
+	(properties [SDTemplate_ProjectKB_Class10094]))
+
+([SDTemplate_ProjectKB_Class10094] of  Widget
+
+	(height 248)
+	(is_hidden FALSE)
+	(label "Class Annotations")
+	(name "http://www.w3.org/2002/07/owl#equivalentClass")
+	(property_list [SDTemplate_ProjectKB_Class10095])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 660)
+	(x 0)
+	(y 82))
+
+([SDTemplate_ProjectKB_Class10095] of  Property_List
+
+	(properties
+		[SDTemplate_ProjectKB_Class10096]
+		[SDTemplate_ProjectKB_Class10100]))
+
+([SDTemplate_ProjectKB_Class10096] of  Widget
+
+	(height 248)
+	(is_hidden FALSE)
+	(label "Logic View")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SDTemplate_ProjectKB_Class10097])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 660)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10097] of  Property_List
+
+	(properties
+		[SDTemplate_ProjectKB_Class10098]
+		[SDTemplate_ProjectKB_Class10099]))
+
+([SDTemplate_ProjectKB_Class10098] of  Widget
+
+	(height 128)
+	(is_hidden FALSE)
+	(label "Conditions")
+	(name ":DIRECT-SUPERCLASSES")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 650)
+	(x 5)
+	(y 5))
+
+([SDTemplate_ProjectKB_Class10099] of  Widget
+
+	(height 108)
+	(is_hidden FALSE)
+	(label "Disjoints")
+	(name "http://www.w3.org/2002/07/owl#disjointWith")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 660)
+	(x 0)
+	(y 140))
+
+([SDTemplate_ProjectKB_Class10100] of  Widget
+
+	(height -28)
+	(is_hidden FALSE)
+	(label "Properties View")
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [SDTemplate_ProjectKB_Class10101])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width -5)
+	(x 2)
+	(y 25))
+
+([SDTemplate_ProjectKB_Class10101] of  Property_List
+
+	(properties
+		[SDTemplate_ProjectKB_Class10102]
+		[SDTemplate_ProjectKB_Class10103]
+		[SDTemplate_ProjectKB_Class10106]))
+
+([SDTemplate_ProjectKB_Class10102] of  Widget
+
+	(is_hidden FALSE)
+	(label "Superclasses")
+	(name ":DIRECT-SUPERCLASSES")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SDTemplate_ProjectKB_Class10103] of  Widget
+
+	(is_hidden FALSE)
+	(label "Properties")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SDTemplate_ProjectKB_Class10104])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SDTemplate_ProjectKB_Class10104] of  Property_List
+
+	(properties [SDTemplate_ProjectKB_Class10105]))
+
+([SDTemplate_ProjectKB_Class10105] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DisplayRestrictions"))
+
+([SDTemplate_ProjectKB_Class10106] of  Widget
+
+	(is_hidden FALSE)
+	(label "Disjoints")
+	(name "http://www.w3.org/2002/07/owl#disjointWith")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SDTemplate_ProjectKB_Class10107] of  Widget
+
+	(height 0)
+	(label "Name")
+	(name ":NAME")
+	(property_list [SDTemplate_ProjectKB_Class10108])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10108] of  Property_List
+
+	(properties [SDTemplate_ProjectKB_Class10109]))
+
+([SDTemplate_ProjectKB_Class10109] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DisabledByUser"))
+
+([SDTemplate_ProjectKB_Class10110] of  Widget
+
+	(height 0)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [SDTemplate_ProjectKB_Class10111])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10111] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10112] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([SDTemplate_ProjectKB_Class10113] of  Widget
+
+	(height 0)
+	(label "OWL Properties")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SDTemplate_ProjectKB_Class10114])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10114] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10115] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[SDTemplate_ProjectKB_Class10116]
+		[SDTemplate_ProjectKB_Class10117]))
+
+([SDTemplate_ProjectKB_Class10116] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<all>>"))
+
+([SDTemplate_ProjectKB_Class10117] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([SDTemplate_ProjectKB_Class10118] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [SDTemplate_ProjectKB_Class10119])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10119] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10120] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
+	(property_list [SDTemplate_ProjectKB_Class10121])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10121] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10122] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
+	(property_list [SDTemplate_ProjectKB_Class10123]))
+
+([SDTemplate_ProjectKB_Class10123] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10124] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
+	(property_list [SDTemplate_ProjectKB_Class10125]))
+
+([SDTemplate_ProjectKB_Class10125] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10126] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
+	(property_list [SDTemplate_ProjectKB_Class10127]))
+
+([SDTemplate_ProjectKB_Class10127] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10128] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
+	(property_list [SDTemplate_ProjectKB_Class10129]))
+
+([SDTemplate_ProjectKB_Class10129] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10130] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
+	(property_list [SDTemplate_ProjectKB_Class10131]))
+
+([SDTemplate_ProjectKB_Class10131] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10132] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2002/07/owl#equivalentClass")
+	(property_list [SDTemplate_ProjectKB_Class10133])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10133] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10134] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#subClassOf")
+	(property_list [SDTemplate_ProjectKB_Class10135])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10135] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10136] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasName")
+	(property_list [SDTemplate_ProjectKB_Class10137])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
+	(width 200)
+	(x 0)
+	(y 330))
+
+([SDTemplate_ProjectKB_Class10137] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10138] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasInclusionKeywords")
+	(property_list [SDTemplate_ProjectKB_Class10139])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 200)
+	(y 450))
+
+([SDTemplate_ProjectKB_Class10139] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10140] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasExclusionKeywords")
+	(property_list [SDTemplate_ProjectKB_Class10141])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 400)
+	(y 450))
+
+([SDTemplate_ProjectKB_Class10141] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10142] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#isRelatedTo")
+	(property_list [SDTemplate_ProjectKB_Class10143])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 400)
+	(y 330))
+
+([SDTemplate_ProjectKB_Class10143] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10144] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#isSynonymousTo")
+	(property_list [SDTemplate_ProjectKB_Class10145])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 200)
+	(y 330))
+
+([SDTemplate_ProjectKB_Class10145] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10146] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasExternalCodings")
+	(property_list [SDTemplate_ProjectKB_Class10147])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 0)
+	(y 450))
+
+([SDTemplate_ProjectKB_Class10147] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10148] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#isExactConceptFor")
+	(property_list [SDTemplate_ProjectKB_Class10149])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
+	(width 200)
+	(x 0)
+	(y 390))
+
+([SDTemplate_ProjectKB_Class10149] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10150] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#ConditionMetaClass")
+	(property_list [SDTemplate_ProjectKB_Class10153])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([SDTemplate_ProjectKB_Class10153] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[SDTemplate_ProjectKB_Class10154]
+		[SDTemplate_ProjectKB_Class10156]
+		[SDTemplate_ProjectKB_Class10157]
+		[SDTemplate_ProjectKB_Class10158]
+		[SDTemplate_ProjectKB_Class10173]
+		[SDTemplate_ProjectKB_Class10176]
+		[SDTemplate_ProjectKB_Class10178]
+		[SDTemplate_ProjectKB_Class10179]
+		[SDTemplate_ProjectKB_Class10181]
+		[SDTemplate_ProjectKB_Class10184]
+		[SDTemplate_ProjectKB_Class10186]
+		[SDTemplate_ProjectKB_Class10188]
+		[SDTemplate_ProjectKB_Class10190]
+		[SDTemplate_ProjectKB_Class10192]
+		[SDTemplate_ProjectKB_Class10194]
+		[SDTemplate_ProjectKB_Class10196]
+		[SDTemplate_ProjectKB_Class10198]
+		[SDTemplate_ProjectKB_Class10200]
+		[SDTemplate_ProjectKB_Class10202]
+		[SDTemplate_ProjectKB_Class10204]
+		[SDTemplate_ProjectKB_Class10206]
+		[SDTemplate_ProjectKB_Class10208]
+		[SDTemplate_ProjectKB_Class10210]
+		[SDTemplate_ProjectKB_Class10212]))
+
+([SDTemplate_ProjectKB_Class10154] of  Widget
+
+	(height 0)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [SDTemplate_ProjectKB_Class10155])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10155] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10156] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([SDTemplate_ProjectKB_Class10157] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([SDTemplate_ProjectKB_Class10158] of  Widget
+
+	(height 320)
+	(label "Definition")
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [SDTemplate_ProjectKB_Class10159])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.ClassAnnotationsAndDescriptionWidget")
+	(width 660)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10159] of  Property_List
+
+	(properties [SDTemplate_ProjectKB_Class10160]))
+
+([SDTemplate_ProjectKB_Class10160] of  Widget
+
+	(height 241)
+	(is_hidden FALSE)
+	(label "Class Annotations")
+	(name "http://www.w3.org/2002/07/owl#equivalentClass")
+	(property_list [SDTemplate_ProjectKB_Class10161])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 660)
+	(x 0)
+	(y 79))
+
+([SDTemplate_ProjectKB_Class10161] of  Property_List
+
+	(properties
+		[SDTemplate_ProjectKB_Class10162]
+		[SDTemplate_ProjectKB_Class10166]))
+
+([SDTemplate_ProjectKB_Class10162] of  Widget
+
+	(height 241)
+	(is_hidden FALSE)
+	(label "Logic View")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SDTemplate_ProjectKB_Class10163])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 660)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10163] of  Property_List
+
+	(properties
+		[SDTemplate_ProjectKB_Class10164]
+		[SDTemplate_ProjectKB_Class10165]))
+
+([SDTemplate_ProjectKB_Class10164] of  Widget
+
+	(height 123)
+	(is_hidden FALSE)
+	(label "Conditions")
+	(name ":DIRECT-SUPERCLASSES")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 650)
+	(x 5)
+	(y 5))
+
+([SDTemplate_ProjectKB_Class10165] of  Widget
+
+	(height 106)
+	(is_hidden FALSE)
+	(label "Disjoints")
+	(name "http://www.w3.org/2002/07/owl#disjointWith")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 660)
+	(x 0)
+	(y 135))
+
+([SDTemplate_ProjectKB_Class10166] of  Widget
+
+	(height -28)
+	(is_hidden FALSE)
+	(label "Properties View")
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [SDTemplate_ProjectKB_Class10167])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width -5)
+	(x 2)
+	(y 25))
+
+([SDTemplate_ProjectKB_Class10167] of  Property_List
+
+	(properties
+		[SDTemplate_ProjectKB_Class10168]
+		[SDTemplate_ProjectKB_Class10169]
+		[SDTemplate_ProjectKB_Class10172]))
+
+([SDTemplate_ProjectKB_Class10168] of  Widget
+
+	(is_hidden FALSE)
+	(label "Superclasses")
+	(name ":DIRECT-SUPERCLASSES")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SDTemplate_ProjectKB_Class10169] of  Widget
+
+	(is_hidden FALSE)
+	(label "Properties")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SDTemplate_ProjectKB_Class10170])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SDTemplate_ProjectKB_Class10170] of  Property_List
+
+	(properties [SDTemplate_ProjectKB_Class10171]))
+
+([SDTemplate_ProjectKB_Class10171] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DisplayRestrictions"))
+
+([SDTemplate_ProjectKB_Class10172] of  Widget
+
+	(is_hidden FALSE)
+	(label "Disjoints")
+	(name "http://www.w3.org/2002/07/owl#disjointWith")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SDTemplate_ProjectKB_Class10173] of  Widget
+
+	(height 0)
+	(label "Name")
+	(name ":NAME")
+	(property_list [SDTemplate_ProjectKB_Class10174])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10174] of  Property_List
+
+	(properties [SDTemplate_ProjectKB_Class10175]))
+
+([SDTemplate_ProjectKB_Class10175] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DisabledByUser"))
+
+([SDTemplate_ProjectKB_Class10176] of  Widget
+
+	(height 0)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [SDTemplate_ProjectKB_Class10177])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10177] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10178] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([SDTemplate_ProjectKB_Class10179] of  Widget
+
+	(height 0)
+	(label "OWL Properties")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SDTemplate_ProjectKB_Class10180])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10180] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10181] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[SDTemplate_ProjectKB_Class10182]
+		[SDTemplate_ProjectKB_Class10183]))
+
+([SDTemplate_ProjectKB_Class10182] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<all>>"))
+
+([SDTemplate_ProjectKB_Class10183] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([SDTemplate_ProjectKB_Class10184] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [SDTemplate_ProjectKB_Class10185])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10185] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10186] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
+	(property_list [SDTemplate_ProjectKB_Class10187])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10187] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10188] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
+	(property_list [SDTemplate_ProjectKB_Class10189]))
+
+([SDTemplate_ProjectKB_Class10189] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10190] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
+	(property_list [SDTemplate_ProjectKB_Class10191]))
+
+([SDTemplate_ProjectKB_Class10191] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10192] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
+	(property_list [SDTemplate_ProjectKB_Class10193]))
+
+([SDTemplate_ProjectKB_Class10193] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10194] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
+	(property_list [SDTemplate_ProjectKB_Class10195]))
+
+([SDTemplate_ProjectKB_Class10195] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10196] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
+	(property_list [SDTemplate_ProjectKB_Class10197]))
+
+([SDTemplate_ProjectKB_Class10197] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10198] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2002/07/owl#equivalentClass")
+	(property_list [SDTemplate_ProjectKB_Class10199])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10199] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10200] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#subClassOf")
+	(property_list [SDTemplate_ProjectKB_Class10201])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10201] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10202] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasSynonymousConcepts")
+	(property_list [SDTemplate_ProjectKB_Class10203])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 200)
+	(y 320))
+
+([SDTemplate_ProjectKB_Class10203] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10204] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#isInSensitiveDefinitionOf")
+	(property_list [SDTemplate_ProjectKB_Class10205])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 200)
+	(y 440))
+
+([SDTemplate_ProjectKB_Class10205] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10206] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasExactConcept")
+	(property_list [SDTemplate_ProjectKB_Class10207])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
+	(width 200)
+	(x 0)
+	(y 380))
+
+([SDTemplate_ProjectKB_Class10207] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10208] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasRelatedConcepts")
+	(property_list [SDTemplate_ProjectKB_Class10209])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 400)
+	(y 320))
+
+([SDTemplate_ProjectKB_Class10209] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10210] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasName")
+	(property_list [SDTemplate_ProjectKB_Class10211])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
+	(width 200)
+	(x 0)
+	(y 320))
+
+([SDTemplate_ProjectKB_Class10211] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10212] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#isInSpecificDefinitionOf")
+	(property_list [SDTemplate_ProjectKB_Class10213])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 400)
+	(y 440))
+
+([SDTemplate_ProjectKB_Class10213] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10214] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#SyndromeMetaClass")
+	(property_list [SDTemplate_ProjectKB_Class10217])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([SDTemplate_ProjectKB_Class10217] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[SDTemplate_ProjectKB_Class10218]
+		[SDTemplate_ProjectKB_Class10220]
+		[SDTemplate_ProjectKB_Class10221]
+		[SDTemplate_ProjectKB_Class10222]
+		[SDTemplate_ProjectKB_Class10237]
+		[SDTemplate_ProjectKB_Class10240]
+		[SDTemplate_ProjectKB_Class10242]
+		[SDTemplate_ProjectKB_Class10243]
+		[SDTemplate_ProjectKB_Class10245]
+		[SDTemplate_ProjectKB_Class10248]
+		[SDTemplate_ProjectKB_Class10250]
+		[SDTemplate_ProjectKB_Class10252]
+		[SDTemplate_ProjectKB_Class10254]
+		[SDTemplate_ProjectKB_Class10256]
+		[SDTemplate_ProjectKB_Class10258]
+		[SDTemplate_ProjectKB_Class10260]
+		[SDTemplate_ProjectKB_Class10262]
+		[SDTemplate_ProjectKB_Class10264]
+		[SDTemplate_ProjectKB_Class10266]
+		[SDTemplate_ProjectKB_Class10268]
+		[SDTemplate_ProjectKB_Class10270]))
+
+([SDTemplate_ProjectKB_Class10218] of  Widget
+
+	(height 0)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [SDTemplate_ProjectKB_Class10219])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10219] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10220] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([SDTemplate_ProjectKB_Class10221] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([SDTemplate_ProjectKB_Class10222] of  Widget
+
+	(height 330)
+	(label "Definition")
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [SDTemplate_ProjectKB_Class10223])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.ClassAnnotationsAndDescriptionWidget")
+	(width 660)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10223] of  Property_List
+
+	(properties [SDTemplate_ProjectKB_Class10224]))
+
+([SDTemplate_ProjectKB_Class10224] of  Widget
+
+	(height 248)
+	(is_hidden FALSE)
+	(label "Class Annotations")
+	(name "http://www.w3.org/2002/07/owl#equivalentClass")
+	(property_list [SDTemplate_ProjectKB_Class10225])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 660)
+	(x 0)
+	(y 82))
+
+([SDTemplate_ProjectKB_Class10225] of  Property_List
+
+	(properties
+		[SDTemplate_ProjectKB_Class10226]
+		[SDTemplate_ProjectKB_Class10230]))
+
+([SDTemplate_ProjectKB_Class10226] of  Widget
+
+	(height 248)
+	(is_hidden FALSE)
+	(label "Logic View")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SDTemplate_ProjectKB_Class10227])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 660)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10227] of  Property_List
+
+	(properties
+		[SDTemplate_ProjectKB_Class10228]
+		[SDTemplate_ProjectKB_Class10229]))
+
+([SDTemplate_ProjectKB_Class10228] of  Widget
+
+	(height 128)
+	(is_hidden FALSE)
+	(label "Conditions")
+	(name ":DIRECT-SUPERCLASSES")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 650)
+	(x 5)
+	(y 5))
+
+([SDTemplate_ProjectKB_Class10229] of  Widget
+
+	(height 108)
+	(is_hidden FALSE)
+	(label "Disjoints")
+	(name "http://www.w3.org/2002/07/owl#disjointWith")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 660)
+	(x 0)
+	(y 140))
+
+([SDTemplate_ProjectKB_Class10230] of  Widget
+
+	(height -28)
+	(is_hidden FALSE)
+	(label "Properties View")
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [SDTemplate_ProjectKB_Class10231])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width -5)
+	(x 2)
+	(y 25))
+
+([SDTemplate_ProjectKB_Class10231] of  Property_List
+
+	(properties
+		[SDTemplate_ProjectKB_Class10232]
+		[SDTemplate_ProjectKB_Class10233]
+		[SDTemplate_ProjectKB_Class10236]))
+
+([SDTemplate_ProjectKB_Class10232] of  Widget
+
+	(is_hidden FALSE)
+	(label "Superclasses")
+	(name ":DIRECT-SUPERCLASSES")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SDTemplate_ProjectKB_Class10233] of  Widget
+
+	(is_hidden FALSE)
+	(label "Properties")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SDTemplate_ProjectKB_Class10234])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SDTemplate_ProjectKB_Class10234] of  Property_List
+
+	(properties [SDTemplate_ProjectKB_Class10235]))
+
+([SDTemplate_ProjectKB_Class10235] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DisplayRestrictions"))
+
+([SDTemplate_ProjectKB_Class10236] of  Widget
+
+	(is_hidden FALSE)
+	(label "Disjoints")
+	(name "http://www.w3.org/2002/07/owl#disjointWith")
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([SDTemplate_ProjectKB_Class10237] of  Widget
+
+	(height 0)
+	(label "Name")
+	(name ":NAME")
+	(property_list [SDTemplate_ProjectKB_Class10238])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10238] of  Property_List
+
+	(properties [SDTemplate_ProjectKB_Class10239]))
+
+([SDTemplate_ProjectKB_Class10239] of  Boolean
+
+	(boolean_value TRUE)
+	(name "DisabledByUser"))
+
+([SDTemplate_ProjectKB_Class10240] of  Widget
+
+	(height 0)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [SDTemplate_ProjectKB_Class10241])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10241] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10242] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([SDTemplate_ProjectKB_Class10243] of  Widget
+
+	(height 0)
+	(label "OWL Properties")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SDTemplate_ProjectKB_Class10244])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10244] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10245] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[SDTemplate_ProjectKB_Class10246]
+		[SDTemplate_ProjectKB_Class10247]))
+
+([SDTemplate_ProjectKB_Class10246] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<all>>"))
+
+([SDTemplate_ProjectKB_Class10247] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([SDTemplate_ProjectKB_Class10248] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [SDTemplate_ProjectKB_Class10249])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10249] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10250] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
+	(property_list [SDTemplate_ProjectKB_Class10251])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10251] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10252] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
+	(property_list [SDTemplate_ProjectKB_Class10253]))
+
+([SDTemplate_ProjectKB_Class10253] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10254] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
+	(property_list [SDTemplate_ProjectKB_Class10255]))
+
+([SDTemplate_ProjectKB_Class10255] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10256] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
+	(property_list [SDTemplate_ProjectKB_Class10257]))
+
+([SDTemplate_ProjectKB_Class10257] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10258] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
+	(property_list [SDTemplate_ProjectKB_Class10259]))
+
+([SDTemplate_ProjectKB_Class10259] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10260] of  Widget
+
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
+	(property_list [SDTemplate_ProjectKB_Class10261]))
+
+([SDTemplate_ProjectKB_Class10261] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10262] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2002/07/owl#equivalentClass")
+	(property_list [SDTemplate_ProjectKB_Class10263])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10263] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10264] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "http://www.w3.org/2000/01/rdf-schema#subClassOf")
+	(property_list [SDTemplate_ProjectKB_Class10265])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([SDTemplate_ProjectKB_Class10265] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10266] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasSensitiveDefinition")
+	(property_list [SDTemplate_ProjectKB_Class10267])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 200)
+	(y 330))
+
+([SDTemplate_ProjectKB_Class10267] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10268] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasSpecificDefinition")
+	(property_list [SDTemplate_ProjectKB_Class10269])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
+	(width 200)
+	(x 400)
+	(y 330))
+
+([SDTemplate_ProjectKB_Class10269] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10270] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#hasName")
+	(property_list [SDTemplate_ProjectKB_Class10271])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
+	(width 200)
+	(x 0)
+	(y 330))
+
+([SDTemplate_ProjectKB_Class10271] of  Property_List
+)
+
+([SDTemplate_ProjectKB_Class10277] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([SDTemplate_ProjectKB_Class10055] of  String
+([SDTemplate_ProjectKB_Class10278] of  String
 
-	(name ":META-CLASS")
+	(name "http://www.w3.org/2002/07/owl#Class")
 	(string_value "%3ANAME"))
 
-([SDTemplate_ProjectKB_Class10056] of  String
+([SDTemplate_ProjectKB_Class10279] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([SDTemplate_ProjectKB_Class10057] of  String
+([SDTemplate_ProjectKB_Class10280] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([SDTemplate_ProjectKB_Class10281] of  String
 
 	(name "http://www.w3.org/2002/07/owl#Thing")
 	(string_value "%3ANAME"))
@@ -7516,11 +8775,6 @@
 
 ([SDTemplate_ProjectKB_Class52] of  Property_List
 )
-
-([SDTemplate_ProjectKB_Class53] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Class")
-	(string_value "%3ANAME"))
 
 ([SDTemplate_ProjectKB_Class54] of  String
 
