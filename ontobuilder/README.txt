@@ -1,26 +1,43 @@
-07 Apr, 2010
+22 Apr, 2010
 
-Copied from Anya's email to Mike dated October 2009. May need to update!
+-----------------------------------------------------------------------------------
+ COMPILING
 -----------------------------------------------------------------------------------
 
-To make it work you'll need to follow several steps:
+   Create a new java project in Eclipse using the existing source. The root folder
+   to specify in the new project wizard should be the parent folder (ontobuilder), 
+   and not src. This way the wizard would automatically configure the build path
+   with all the necessary libraries (protege and other) contained in lib sub-folder. 
 
-1) Create a new java project in Eclipse using the existing source 
+-----------------------------------------------------------------------------------
+ RUNNING
+-----------------------------------------------------------------------------------
 
-2) Add Protege libraries. For that you can go to Project menu >> Properties, 
-   and select Build Path and then Libraries tab. You need to add ALL jar files 
-   from your Protege installation. 
+1) OntoWriter
 
-3) Build your project - it should compile without errors IF all the necessary 
-   libraries were added to the build path.
-
-4) To run the program, you need to supply 3 command-line arguments: 
-   - inputFileName
+   Main class for run configuration in Eclipse is SDefMain.java.
+   To run the program, you need to supply 3 command-line arguments: 
+   - inputFileName (csv)
    - templateOntologyPath
    - outputOntologyPath
 
    Please note, that the last 2 arguments have to be absolute paths in the URI format. 
    Here is how the arguments look on my computer (in Eclipse), for example:
-   - "D:\Anuta\Work\SyndromeDefinitions\ClinicalConcepts.txt"
+   - "D:\Anuta\Work\SyndromeDefinitions\consensus.csv"
    - "file:///D:/Anuta/Work/SyndromeDefinitions/onto/SDTemplate.owl"
    - "file:///D:/Anuta/Work/SyndromeDefinitions/onto/result.owl"
+
+2) OntoFormatter
+
+   Main class is SDefOntoFormatter.java. Also uses 3 command-line arguments:
+   - ontologyPath (owl fil, the path should be absolute, in URI format)
+   - htmlHeaderPath
+   - htmlOutputPath
+
+  The HTML header file can be found in ../input folder.
+
+-----------------------------------------------------------------------------------
+ KNOWN ISSUES:
+-----------------------------------------------------------------------------------
+* The OntoWriter Cannot correctly process the ’ character in the input. 
+  Have to make sure ' is used instead. 

@@ -1,4 +1,3 @@
-import java.io.*;
 import java.net.URI;
 
 public class SDefMain {
@@ -19,21 +18,14 @@ public class SDefMain {
     		String templateURI = args[1];
     		String destinationURI = args[2];
 
-    		// Open input file for reading:
-    		BufferedReader input = new BufferedReader(new FileReader(inputURI));
     		// Create ontology writer object using ontology template file:
     		SDefOntologyWriter writer = new SDefOntologyWriter(templateURI);
-    		
-    		// Read input line-by-line and feed each line to ontology writer:
-    		String line = null;
-    		line = input.readLine();
-    		while ((line = input.readLine()) != null){
-    			writer.translateInputLine(line);
-    		}
+
+    		// Process input file:
+    		writer.processCsvInput(inputURI);
 
     		// Save populated ontology to a destination owl file:
     		writer.saveOntology(new URI(destinationURI));
-    		input.close();
 
     	} catch(Exception e){
     		e.printStackTrace();

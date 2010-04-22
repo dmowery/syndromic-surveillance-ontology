@@ -1,0 +1,111 @@
+html {
+	width: 100%;
+	background-color: #058;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11pt;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+#page {
+	background: #fff url("bg_owl01d.gif") -30px 0px;
+width: 950px;
+margin: 0px auto;
+padding: 0px;
+}
+
+div.container{ 
+      background-color: #fff;
+margin: 0px 120px 0px 30px;
+padding: 0px;
+border-left:1px solid #bbb;
+border-right:1px solid #bbb;
+line-height:110%;
+}
+
+div.header{
+padding: 20px;
+color:white;
+background-color: #058;
+clear:left;
+}
+
+div.footer{
+	padding: 0px 20px 20px 20px;
+	border-top: 1px solid #bbb;
+	text-align: right;
+	clear: left;
+}
+
+.footer img{
+	margin: 0px 0px 0px 20px;
+}
+
+h1.header{
+padding:0px;
+margin: 20px 0px 0px 0px;
+}
+
+div.left{
+float:left;
+width:150px;
+margin:0px;
+padding:1em 20px;
+font-weight: bold;
+}
+
+div.content{
+margin-left:170px;
+border-left:1px solid #bbb;
+padding:1em 20px;
+}
+
+h2	{
+	font-size: 130%;
+	color: #058;
+	}
+
+h3 	{
+	font-size: 110%;
+	color: #058;
+	}
+
+h4	{
+	font-size: 100%;
+	margin-bottom: 5px;
+	margin-right: 40px;
+	}
+a:link {color: #058; text-decoration: underline; }
+a:active {color: #058; text-decoration: underline; }
+a:visited {color: #058; text-decoration: underline; }
+a:hover {color: #09e; text-decoration: none; }
+
+table {border-bottom: 1px solid #ddd; margin-bottom: 20px;}
+td {vertical-align: middle; padding: 0px 15px 0px 5px; font-size: 11pt;}
+td p { padding: 3px 0px;}
+.odd td, .even td {border-top: 1px solid #ddd;}
+.odd td, .odd1 td {background-color: #eee;}
+
+.inline_heading {font-weight: bold; color: #058; }
+div.syndrome_tab {border: 1px solid #058; padding: 20px; margin-bottom: 30px; display: none;} 
+span.syndrome_tab {
+	border: 1px solid #058; 
+	padding: 3px 10px 0px 10px; 
+	background-color: #058;
+	color: #fff;
+	cursor: pointer;
+	margin: 0px;
+}
+
+.details {font-size: 80%; padding-left: 35px; display: none;}
+.prop_name {color: #058;}
+.toggle {border: 1px solid #ccc; cursor: pointer; font-family: monospace; padding: 0px 2px;}
+
+.code {font-family: monospace; color: #79c;}

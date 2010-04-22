@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type"
+    content="text/html;charset=iso-8859-1" />
+    <meta name="author" content="Mike Conway" />
+    <title>Syndromic Surveillance Ontology :: Onto-Browser</title>
+    <link rel="stylesheet" href="sso.css" type="text/css" />
+    <script language="JavaScript">
+	    function toggle(caller, detID)
+	    {
+		    details = document.getElementById(detID);
+		    if (details.style.display == "block") details.style.display = "none";
+		    else details.style.display = "block";
+		    if (caller.firstChild.nodeValue == "-") caller.firstChild.nodeValue = "+";
+		    else caller.firstChild.nodeValue = "-";
+	    }
+
+	    var activeTab = "";
+	    function switchtab(newActive)
+	    {
+    		    oldActiveTab = document.getElementById("tab" + activeTab);
+		    if (oldActiveTab != null) {
+			    oldActiveTab.style.backgroundColor = "#058";
+			    oldActiveTab.style.color = "#fff";
+			    oldActiveTab.style.borderBottom = "1px solid #058"; 
+			    document.getElementById("syndrome" + activeTab).style.display = "none";
+		    }
+		    newActiveTab = document.getElementById("tab" + newActive);
+		    newActiveTab.style.backgroundColor = "#fff";
+		    newActiveTab.style.color = "#058";
+		    newActiveTab.style.borderBottom = "1px solid #fff"; 
+		    document.getElementById("syndrome" + newActive).style.display = "block";
+		    activeTab = newActive;
+	    }
+    </script>
+  </head>
+
+<body onload="switchtab('0');">
+<div id="page">
+<div class="container">
+<div class="header"><h1 class="header">Syndromic Surveillance Ontology</h1></div>
+<div class="left">
+<!-- Navigation: Left menu -->
+<p><a href="index.html">[Home]</a></p>
+<p><a href="ontology.html">[Ontology]</a></p>
+<p><a href="classifier.html">[Classifier]</a></p>
+<p><a href="comingsoon.html">[Publications]</a></p>
+<!--<p><a href="links.html">[Links]</a></p>-->
+</div>
+
+  

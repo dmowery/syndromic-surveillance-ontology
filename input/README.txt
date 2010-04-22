@@ -12,4 +12,12 @@ A tab delimited version of consensus.xls
 
 ./consensus.csv
 A csv version of consensus.xls used by the new version of ontoBuilder
+NOTE: Had to manually correct ’ to ' (single occurence)! 
+      OntoBiulder cannot process the ’ character correctly.
+
+./header.html
+First part of the HTML onto-browser used by OntoFormatter program.
+
+./sso.css
+Necessary to view the HTML onto-browser created by OntoFormatter.
 

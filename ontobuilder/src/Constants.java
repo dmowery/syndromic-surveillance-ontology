@@ -3,7 +3,6 @@ public interface Constants {
 	public static final String METACLASS_CONCEPT = "ConceptMetaClass";
 	public static final String METACLASS_CONDITION = "ConditionMetaClass";
 	public static final String METACLASS_SYNDROME = "SyndromeMetaClass";
-	public static final String METACLASS_CODE = "CodingMetaClass";
 	public static final String CLASS_CONCEPT = "ClinicalConcept";
 	public static final String CLASS_CONDITION = "ClinicalCondition";
 	public static final String CLASS_SYNDROME = "Syndrome";
@@ -34,22 +33,24 @@ public interface Constants {
 	public static final String PROPERTY_CODE_ID = "codeID";
 	public static final String PROPERTY_CODESYSTEM_NAME = "codingSystemName";
 	
-	
-	// Column order in the input spreadsheet:
-	public static int SENS_RESPIRATORY_DEF_INDEX = 0;
-	public static int SPEC_RESPIRATORY_DEF_INDEX = 1;
-	public static int SENS_GI_DEF_INDEX = 2;
-	public static int SPEC_GI_DEF_INDEX = 3;
-	public static int CONSTITUTIONAL_DEF_INDEX = 4;
-	public static int ILI_DEF_INDEX = 5;
-	public static int CONDITION_INDEX = 6;
-	public static int CONCEPT_INDEX = 7;
-	public static int RELATION_INDEX = 8;
-	public static int INCLUSION_KEYWORDS_REGEX_INDEX = 9;
-	public static int EXCLUSION_KEYWORDS_REGEX_INDEX = 10;
-	public static int CCC_ID_INDEX = 14;
-	public static int CCC_TITLE_INDEX = 15;
-	public static int INCLUSION_KEYWORDS_OLD_INDEX = 16;
+	// Column names in the input CSV file:
+	public static String SENS_RESPIRATORY_DEF_COLUMN = "Sensitive Respiratory Syndrome from CC";
+	public static String SPEC_RESPIRATORY_DEF_COLUMN = "Specific Respiratory Syndrome from CC";
+	public static String SENS_GI_DEF_COLUMN = "Sensitive GI Syndrome from CC";
+	public static String SPEC_GI_DEF_COLUMN = "Specific GI Syndrome from CC";
+	public static String CONSTITUTIONAL_DEF_COLUMN = "Constitutional Syndrome from CC";
+	public static String ILI_DEF_COLUMN = "Influenza-like Syndrome from CC";
+	public static String CONDITION_COLUMN = "Concept Name";
+	public static String CONCEPT_COLUMN = "Sub-concept Name";
+	public static String RELATION_COLUMN = "Relation to Concept Name (Concept name, Related concept, Synonym)";
+	public static String INCLUSION_KEYWORDS_REGEX_COLUMN = "keywords, regular expressions and CUIS";
+	public static String EXCLUSION_KEYWORDS_REGEX_COLUMN = "Exclusion Keywords and Patterns";
+	public static String CCC_ID_COLUMN = "CCC_ComplaintID";
+	public static String CCC_TITLE_COLUMN = "CCC_Title";
+	public static String MESH_CODE_COLUMN = "MeSH Code";
+	public static String SNOWMED_CODE_COLUMN = "SNOMED Code";
+	public static String ICD9_CODE_COLUMN = "ICD-9 Code";
+	public static String ICD10_CODE_COLUMN = "ICD-10 Code";
 	
 	// Syndrome names:
 	public static String RESPIRATORY_SYNDROME_NAME = "RespiratorySyndrome";
@@ -61,7 +62,8 @@ public interface Constants {
 	public static String CODING_CCC = "CCC";
 	public static String CODING_MESH = "MeSH";
 	public static String CODING_SNOMED = "SNOMED";
-	public static String CODING_ICD9 = "ICD_9";
 	public static String CODING_UMLS = "UMLS";
+	public static String CODING_ICD9 = "ICD_9";
+	public static String CODING_ICD10 = "ICD_10";
 	
 }
