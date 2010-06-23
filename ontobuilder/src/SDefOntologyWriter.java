@@ -71,7 +71,7 @@ public class SDefOntologyWriter {
 				meshCode = inputRr.get(Constants.MESH_CODE_COLUMN).trim();
 				icd9Code = inputRr.get(Constants.ICD9_CODE_COLUMN).trim();
 				icd10Code = inputRr.get(Constants.ICD10_CODE_COLUMN).trim();
-				snomedCode = inputRr.get(Constants.SNOWMED_CODE_COLUMN).trim();
+				snomedCode = inputRr.get(Constants.SNOWMED_CODE_COLUMN).trim().replace("[", "").replace("]", "");
 				if (cccID.length() > 0 && cccTitle.length() > 0) codes.add(new Coding(Constants.CODING_CCC, cccID, cccTitle));
 				if (meshCode.length() > 0) codes.add(new Coding(Constants.CODING_MESH, meshCode, null));
 				if (snomedCode.length() > 0) codes.add(new Coding(Constants.CODING_SNOMED, snomedCode, null));
@@ -299,6 +299,32 @@ public class SDefOntologyWriter {
 			}
 		}
 	}
+	
+    public static void main(String[] args) {
+    	try {
+    		if (args.length < 3) {
+    			System.out.println("One or more program arguments are missing!");
+    			System.out.println("USAGE: SDefMain <inputFileName> <ontologyTemplateURI> <resultOntologyURI>");
+    			return;
+    		}
+    		
+    		String inputURI = args[0];
+    		String templateURI = args[1];
+    		String destinationURI = args[2];
+
+    		// Create ontology writer object using ontology template file:
+    		SDefOntologyWriter writer = new SDefOntologyWriter(templateURI);
+
+    		// Process input file:
+    		writer.processCsvInput(inputURI);
+
+    		// Save populated ontology to a destination owl file:
+    		writer.saveOntology(new URI(destinationURI));
+
+    	} catch(Exception e){
+    		e.printStackTrace();
+    	}
+    }		
 } 
 
 class Coding {
